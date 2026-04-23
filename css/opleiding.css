@@ -1,0 +1,82 @@
+
+
+.main{
+    display: block;
+}
+
+.keus{
+    width: 70%;
+    height: 16rem;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+.portret{
+    width: 15%;
+    height: auto;
+    text-align: right;
+    margin-right: 2%;
+    float: right;
+}
+caption{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin-bottom: auto;
+}
+.rooster{
+    background-color: aliceblue;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-collapse: collapse;
+
+}
+
+.rooster th,td{
+    border: solid black;
+    width: 5rem;
+    height: 6rem;
+    padding-left: 1rem;
+}
+
+tr th{
+    background-color: blanchedalmond;
+}
+
+.pauze{
+    text-align: center;
+    padding:  0 auto;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+    .keus {
+        width: 100%;
+        height: auto;
+    }
+
+    .portret {
+        float: none;
+        width: 100%;
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .rooster {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .rooster th,
+    .rooster td {
+        width: auto;
+        height: auto;
+        padding: 0.5rem;
+    }
+
+    caption {
+        font-size: 1.5rem;
+    }
+}

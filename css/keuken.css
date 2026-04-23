@@ -1,0 +1,113 @@
+body{
+    background-color: white;
+}
+
+.main{
+    display: block;
+}
+
+.action1{
+    background-color: oklab(91.305% -0.15015 0.17872);
+    display: inline-flex;
+    width: 100%;
+    height: 25rem;
+}
+
+.menu, .flyer{
+    width: 20%;
+    height: auto;
+    
+}
+
+.menu img{
+    width: 95%;
+    height: 100%;
+    margin: auto;
+}
+
+
+.flyer {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;  
+}
+
+.description{
+width: 60%;
+padding: 2rem;
+margin : 0 auto;
+border: 2px dotted white;
+font-size: 1.3rem; 
+color: black    
+}
+
+
+
+.action2{
+    display: inline-flex;
+    width: 100%;
+    height: 22rem;
+}
+
+.slides{
+    width: 20%; 
+    height: auto;
+}
+
+.slides img{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+.footer{
+    background-color: black;
+    width: 100%;
+    height:3rem ;
+}
+
+
+/* .menu1 img{
+    width: 98%;
+    height: auto;
+    margin-right: 2%;
+}
+.menu2 img{
+    width: 100%;
+    height: auto;
+}
+
+.menu4 img{
+    width: 98%;
+    height: auto;
+    margin-left: 2%;
+}
+.menu5 img{
+    width: 98%;
+    height: auto;
+    margin-left: 2%;
+} */
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+    .action1,
+    .action2 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .menu,
+    .flyer,
+    .description,
+    .slides {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .description {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}

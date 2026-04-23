@@ -1,0 +1,109 @@
+/* === Reset et base === */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(202, 214, 194);
+}
+
+/* === Navigation === */
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 0.5em 2em;
+    border-radius: 2rem;
+}
+
+.navigation .logo {
+    width: 8rem;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 2rem; /* espace entre les items */
+    align-items: center;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navigation li a:hover {
+    background-color: gold;
+    color: black;
+    border-radius: 0.5rem;
+}
+
+#igm {
+    width: 2.5rem;
+}
+
+/* === Page principale === */
+.homePage {
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.homePage .Youssouf {
+    float: right;
+    width: 20%;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: opacity 1s ease;
+    margin-left: 1rem;
+}
+
+.homePage h1 {
+    font-size: 2rem;
+}
+
+/* === Footer === */
+.footer {
+    color: brown;
+    text-align: center;
+    border-top: 2px dotted goldenrod;
+    padding: 1rem 0;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+    .navigation {
+        padding: 0.5em 1em;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .navigation li a {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    .homePage {
+        font-size: 1rem;
+    }
+
+    .homePage .Youssouf {
+        float: none;
+        width: 100%;
+        margin: 0 auto 1rem;
+    }
+
+    .homePage h1 {
+        font-size: 1.5rem;
+    }
+}
